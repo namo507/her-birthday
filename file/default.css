@@ -26,18 +26,19 @@ a {
   margin-top: 10px;
 }
 #text {
-  width: 320px;
-  height: 600px;
-  left: 150px;
-  top: 50px;
+  width: 380px;
+  height: 520px;
+  left: 120px;
+  top: 20px;
   position: absolute;
+  overflow: hidden;
 }
 #code {
   display: none;
   color: rgb(196, 255, 255);
-  font-size: 18px;
-  margin-top: 40px;
-  line-height: 32px;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 24px;
 }
 #clock-box {
   position: absolute;
@@ -74,89 +75,81 @@ a {
   margin-left: 5px;
   display: block;
   margin-bottom: 8px;
-  animation: fadeInUp 0.5s ease-out;
+  padding: 2px 0;
 }
 
 /* Different styles for each message type */
 .say-greeting {
   font-family: 'Great Vibes', cursive;
-  font-size: 32px;
-  color: #ff69b4;
-  text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5);
+  font-size: 26px;
+  color: #ff85c1;
+  text-shadow: 0 0 10px rgba(255, 133, 193, 0.8), 2px 2px 4px rgba(255, 105, 180, 0.5);
 }
 
 .say-birthday {
   font-family: 'Pacifico', cursive;
-  font-size: 28px;
-  color: #ffd700;
-  text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.6);
+  font-size: 24px;
+  color: #ffe44d;
+  text-shadow: 0 0 12px rgba(255, 228, 77, 0.8), 2px 2px 8px rgba(255, 215, 0, 0.6);
   letter-spacing: 1px;
 }
 
 .say-blessing {
   font-family: 'Dancing Script', cursive;
-  font-size: 24px;
-  color: #98fb98;
-  text-shadow: 1px 1px 3px rgba(152, 251, 152, 0.5);
+  font-size: 21px;
+  color: #b8ffc8;
+  text-shadow: 0 0 8px rgba(184, 255, 200, 0.7), 1px 1px 3px rgba(152, 251, 152, 0.5);
 }
 
 .say-happiness {
   font-family: 'Satisfy', cursive;
-  font-size: 22px;
-  color: #ffb6c1;
-  text-shadow: 1px 1px 4px rgba(255, 182, 193, 0.6);
+  font-size: 19px;
+  color: #ffd0d9;
+  text-shadow: 0 0 8px rgba(255, 208, 217, 0.7), 1px 1px 4px rgba(255, 182, 193, 0.6);
 }
 
 .say-compliment {
   font-family: 'Caveat', cursive;
-  font-size: 20px;
-  color: #ff6b6b;
-  text-shadow: 1px 1px 3px rgba(255, 107, 107, 0.4);
+  font-size: 18px;
+  color: #ff9090;
+  text-shadow: 0 0 8px rgba(255, 144, 144, 0.7), 1px 1px 3px rgba(255, 107, 107, 0.4);
 }
 
 .say-vibes {
   font-family: 'Indie Flower', cursive;
-  font-size: 19px;
-  color: #87ceeb;
+  font-size: 17px;
+  color: #a8e4ff;
+  text-shadow: 0 0 8px rgba(168, 228, 255, 0.7);
 }
 
 .say-funny {
   font-family: 'Caveat', cursive;
-  font-size: 20px;
-  color: #dda0dd;
+  font-size: 18px;
+  color: #e8c0e8;
   font-style: italic;
+  text-shadow: 0 0 8px rgba(232, 192, 232, 0.7);
 }
 
 .say-special {
   font-family: 'Dancing Script', cursive;
-  font-size: 21px;
-  color: #ffa07a;
-  text-shadow: 1px 1px 4px rgba(255, 160, 122, 0.5);
+  font-size: 18px;
+  color: #ffbe9f;
+  text-shadow: 0 0 8px rgba(255, 190, 159, 0.7), 1px 1px 4px rgba(255, 160, 122, 0.5);
 }
 
 .say-wish {
   font-family: 'Great Vibes', cursive;
-  font-size: 24px;
-  color: #e6b3cc;
+  font-size: 22px;
+  color: #f0c8dc;
+  text-shadow: 0 0 10px rgba(240, 200, 220, 0.8);
 }
 
 .say-final {
   font-family: 'Pacifico', cursive;
-  font-size: 24px;
-  color: #ff69b4;
-  text-shadow: 2px 2px 6px rgba(255, 105, 180, 0.7);
-  margin-top: 15px;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  font-size: 22px;
+  color: #ff9fd0;
+  text-shadow: 0 0 12px rgba(255, 159, 208, 0.9), 2px 2px 6px rgba(255, 105, 180, 0.7);
+  margin-top: 10px;
 }
 
 .space {
