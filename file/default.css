@@ -7,6 +7,10 @@ body {
   font-family: sans-serif;
   overflow: auto;
 }
+
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Satisfy&family=Great+Vibes&family=Caveat:wght@600&family=Indie+Flower&display=swap');
+
 a {
   color: white;
   font-size: 14px;
@@ -22,20 +26,18 @@ a {
   margin-top: 10px;
 }
 #text {
-  width: 272px;
-  height: 560px;
-  left: 188px;
-  top: 80px;
+  width: 320px;
+  height: 600px;
+  left: 150px;
+  top: 50px;
   position: absolute;
 }
 #code {
   display: none;
   color: rgb(196, 255, 255);
-  font-size: 16px;
-  margin-top: 70px;
-  line-height: 25px;
-  font-size: larger;
-  font-weight: bolder;
+  font-size: 18px;
+  margin-top: 40px;
+  line-height: 32px;
 }
 #clock-box {
   position: absolute;
@@ -70,7 +72,93 @@ a {
 }
 .say {
   margin-left: 5px;
+  display: block;
+  margin-bottom: 8px;
+  animation: fadeInUp 0.5s ease-out;
 }
+
+/* Different styles for each message type */
+.say-greeting {
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  color: #ff69b4;
+  text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.5);
+}
+
+.say-birthday {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  color: #ffd700;
+  text-shadow: 2px 2px 8px rgba(255, 215, 0, 0.6);
+  letter-spacing: 1px;
+}
+
+.say-blessing {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  color: #98fb98;
+  text-shadow: 1px 1px 3px rgba(152, 251, 152, 0.5);
+}
+
+.say-happiness {
+  font-family: 'Satisfy', cursive;
+  font-size: 22px;
+  color: #ffb6c1;
+  text-shadow: 1px 1px 4px rgba(255, 182, 193, 0.6);
+}
+
+.say-compliment {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: #ff6b6b;
+  text-shadow: 1px 1px 3px rgba(255, 107, 107, 0.4);
+}
+
+.say-vibes {
+  font-family: 'Indie Flower', cursive;
+  font-size: 19px;
+  color: #87ceeb;
+}
+
+.say-funny {
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: #dda0dd;
+  font-style: italic;
+}
+
+.say-special {
+  font-family: 'Dancing Script', cursive;
+  font-size: 21px;
+  color: #ffa07a;
+  text-shadow: 1px 1px 4px rgba(255, 160, 122, 0.5);
+}
+
+.say-wish {
+  font-family: 'Great Vibes', cursive;
+  font-size: 24px;
+  color: #e6b3cc;
+}
+
+.say-final {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: #ff69b4;
+  text-shadow: 2px 2px 6px rgba(255, 105, 180, 0.7);
+  margin-top: 15px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .space {
   margin-right: 150px;
 }
@@ -80,5 +168,4 @@ a {
   margin-top:450px;
   font-size: 25px;
   font-family: monospace;
-
 }

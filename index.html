@@ -16,7 +16,11 @@
     <script>
         function playAudio() {
             var audio = document.getElementById("myAudio");
-            audio.play();
+            if (audio) {
+                audio.play().catch(function(e) {
+                    console.log("Audio autoplay blocked");
+                });
+            }
         }
     </script>
 </head>
@@ -32,16 +36,24 @@
         <div id="wrap">
             <div id="text">
                 <div id="code">
-                    <span class="say">Hey you 💞</span><br>
-                    <span class="say">Happy Birthday 🎈</span><br>
-                    <span class="say">Bhagwaan aapko bless kare 🍀</span><br>
-                    <span class="say">And give u many happiness 💕</span><br>
-                    <span class="say">Just saying... you're pretty (teri sundarta se jalta mein..yes true) and bakchodily awesome ❤️</span><br>
-                    <span class="say">Sending good vibes (matlab abhi mere vibe spectrum pahunchne tak time tereko still)</span><br>
-                    <span class="say">.. abey yaar yeh cheezy linein... Na boli jaa rhi 😭</span><br>
-                    <span class="say">But yesss.. special ladij (dimaag se bhi) toh ho aap and kinda lucky aap aaye apun ki life mein (OMFG getting cringed while writing this🤡) </span><br>
-                     <span class="say">Aaaand kinda wish pehle mil paate 🥀</span><br>
-                    <span class="say">Hope u have a great day today and Happy New Year motu ❤️😘</span><br>
+                    <span class="say say-greeting">Hey you 💞</span>
+                    <span class="say say-birthday">Happy Birthday 🎈</span>
+                    <span class="say say-blessing">Bhagwaan aapko bless kare 🍀</span>
+                    <span class="say say-happiness">And give u many happiness 💕</span>
+                    <span class="say say-compliment">Just saying... you're pretty and bakchodily awesome ❤️</span>
+
+                    <span class="say say-compliment">And well..teri sundarta se jalta toh hun little little 🥰</span>
+
+                    <span class="say say-vibes">Sending good vibes (matlab abhi mere vibe spectrum pahunchne tak time tereko still)</span>
+
+                    <span class="say say-funny"> OMFG abey yaar yeh cheezy linein... Na boli jaa rhi 😭</span>
+
+                    <span class="say say-special">But yesss.. special ladij (dimaag se bhi) toh ho aap 😍</span>
+
+                    <span class="say say-special">and kinda lucky aap aaye apun ki life mein (OMFG getting cringed while writing this🤡)</span>
+                 
+                    <span class="say say-wish">Aaaand kinda wish pehle mil paate 🥀</span>
+                    <span class="say say-final">Hope u have a great day today and Happy New Year motu ❤️😘</span>
                 </div>
             </div>
             <div id="clock-box">
